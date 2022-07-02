@@ -20,6 +20,7 @@ class TestViews(TestCase):
         self.assertTemplateUsed(response, 'toto/edit_item.html')
 
     def test_can_add_item(self):
+        response = self.client.post('/add')
 
     def test_can_delete_item(self):
 
